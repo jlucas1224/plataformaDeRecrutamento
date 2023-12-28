@@ -1,0 +1,320 @@
+/* Reset de margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais da página */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+nav {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+}
+
+nav a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3490dc;
+    text-decoration: none; /* Removida sublinhado do link */
+}
+
+/* Hero Section */
+.bg-gradient-to-b {
+    background: linear-gradient(to bottom, #3490dc, #0079bf);
+}
+
+/* Recursos Section */
+section {
+    padding: 2rem 0;
+}
+
+h2 {
+    color: #3490dc;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Botão Genérico */
+button {
+    background-color: #fff;
+    color: #3490dc;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #3490dc;
+    color: #fff;
+}
+
+/* Página do Candidato */
+.candidate-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.candidate-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3490dc;
+    margin-bottom: 1rem;
+}
+
+.candidate-info {
+    margin-bottom: 1.5rem;
+}
+
+.candidate-info p {
+    margin-bottom: 0.5rem;
+}
+
+.vacancies-list {
+    list-style: none;
+    padding: 0;
+}
+
+.vacancy-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.vacancy-content {
+    padding: 1.5rem;
+}
+
+.vacancy-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3490dc;
+    margin-bottom: 0.5rem;
+}
+
+.vacancy-description {
+    margin-bottom: 1rem;
+}
+
+.apply-button {
+    background-color: #3490dc;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.apply-button:hover {
+    background-color: #0079bf;
+    transform: scale(1.05); /* Efeito de escala ao passar o mouse sobre o botão */
+}
+
+/* Estilos do formulário */
+.login-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3490dc;
+    margin-bottom: 1rem;
+}
+
+.login-form {
+    margin-top: 1.5rem;
+}
+
+.login-input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.login-button-large {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #3490dc;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button-large:hover {
+    background-color: #0079bf;
+}
+
+/* Navbar */
+nav {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #3490dc;
+}
+
+/* Estilos da página do perfil */
+.profile-section-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3490dc;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Campos de Preenchimento */
+.dynamic-container input,
+.dynamic-container select,
+.dynamic-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Botões Adicionar, Remover, Salvar e Cancelar */
+.add-button,
+.remove-button,
+.save-button,
+.cancel-button {
+    background-color: #3490dc;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.remove-button,
+.cancel-button {
+    background-color: #f44336;
+}
+
+.add-button:hover,
+.remove-button:hover,
+.save-button:hover,
+.cancel-button:hover {
+    background-color: #0079bf;
+}
+
+/* Espaçamento entre Botões */
+.button-space {
+    margin-right: 10px;
+}
+
+/* Botão de Salvar Perfil */
+.save-profile-button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Botão de Salvar Alterações */
+.login-button-large {
+    background-color: #3490dc;
+    color: #fff;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+.login-button-large:hover {
+    background-color: #0079bf;
+}
+
+.save-profile-button:hover {
+    background-color: #45a049;
+}
+
+.job-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.job-card {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.job-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.job-description {
+    font-size: 1rem;
+    color: #4a5568;
+    margin-bottom: 20px;
+}
+
+.job-actions button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#noJobsMessage {
+    margin-top: 20px;
+}

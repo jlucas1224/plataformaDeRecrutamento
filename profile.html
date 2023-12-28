@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Seu Perfil - Recrutamento Online</title>
+    </head>
+
+    <body class="bg-gray-100">
+
+        <!-- Navbar -->
+        <nav class="bg-white p-4 shadow">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="#" class="text-xl font-bold text-blue-500">Recrutamento
+                    Online</a>
+            </div>
+        </nav>
+
+        <!-- Página do Perfil do Usuário -->
+        <div class="container mx-auto mt-8">
+            <h2 class="login-heading">Seu Perfil</h2>
+            <form class="profile-form" id="profileForm"
+                onsubmit="submitProfile()">
+
+                <!-- Seção: Informações do Perfil -->
+                <h3 class="profile-section-heading">Informações do Perfil</h3>
+                <label for="resume">Currículo (PDF):</label>
+                <input type="file" id="resume" class="login-input"
+                    accept=".pdf">
+
+                <div class="grid grid-cols-2 gap-4">
+                    <input type="text" class="login-input" placeholder="Cidade">
+                    <input type="text" class="login-input" placeholder="Estado">
+                    <input type="text" class="login-input" placeholder="País">
+                    <input type="tel" class="login-input"
+                        placeholder="Número de Celular">
+                    <input type="text" class="login-input" placeholder="CEP">
+                    <input type="url" class="login-input"
+                        placeholder="LinkedIn (opcional)">
+                    <input type="url" class="login-input"
+                        placeholder="GitHub (opcional)">
+                    <input type="url" class="login-input"
+                        placeholder="Behance (opcional)">
+                    <input type="url" class="login-input"
+                        placeholder="Portfolio (opcional)">
+                </div>
+
+                <label for="about">Sobre:</label>
+                <textarea id="about" class="login-input" rows="4"
+                    placeholder="Digite um resumo sobre você"></textarea>
+
+                <!-- Seção: Experiências -->
+                <h3 class="profile-section-heading mt-4">Experiências</h3>
+                <div id="experiencesContainer">
+                </div>
+                <button type="button" onclick="addExperience()">Adicionar
+                    Experiência</button>
+
+                <!-- Seção: Estudos -->
+                <h3 class="profile-section-heading mt-4">Estudos</h3>
+                <div id="studiesContainer">
+                </div>
+                <button type="button" onclick="addStudy()">Adicionar
+                    Estudo</button>
+
+                <!-- Seção: Certificações -->
+                <h3 class="profile-section-heading mt-4">Certificações</h3>
+                <div id="certificationsContainer">
+                </div>
+                <button type="button" onclick="addCertification()">Adicionar
+                    Certificação</button>
+
+                <!-- Seção: Idiomas -->
+                <h3 class="profile-section-heading mt-4">Idiomas</h3>
+                <div id="languagesContainer">
+                </div>
+                <button type="button" onclick="addLanguage()">Adicionar
+                    Idioma</button>
+
+                <!-- Seção: Projetos Voluntários -->
+                <h3 class="profile-section-heading mt-4">Projetos
+                    Voluntários</h3>
+                <div id="volunteerProjectsContainer">
+                </div>
+                <button type="button" onclick="addVolunteerProject()">Adicionar
+                    Projeto Voluntário</button>
+
+                <h3 class="profile-section-heading mt-4">Projetos para
+                    Compartilhar</h3>
+                <div id="sharedProjectsContainer" class="dynamic-container">
+                </div>
+                <button type="button" onclick="addSharedProject()">Adicionar
+                    Projeto para Compartilhar</button>
+
+                <div>
+                    <button type="submit" class="login-button-large mt-4"
+                        onclick="redirectToCandidateArea()">Salvar
+                        Alterações</button>
+
+                </div>
+            </form>
+        </div>
+
+        <!-- Rodapé -->
+        <footer class="bg-gray-800 text-white py-8 mt-8">
+            <div class="container mx-auto text-center">
+                <p>&copy; 2023 Recrutamento Online. Todos os direitos
+                    reservados.</p>
+            </div>
+        </footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+        <script src="./profile.js"></script>
+    </body>
+
+</html>

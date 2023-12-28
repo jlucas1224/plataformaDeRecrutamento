@@ -1,0 +1,65 @@
+/* Estilos específicos para a página inicial de recrutadores */
+.recruiters-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.recruiters-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.recruiter-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.recruiter-actions a {
+    margin: 0 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border: 2px solid #3498db;
+    color: #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.recruiter-actions a:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Estilos específicos para o formulário de registro */
+.registration-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.registration-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.registration-form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.registration-form button {
+    background-color: #3498db;
+    color: white;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.registration-form button:hover {
+    background-color: #1e3a8a;
+}
